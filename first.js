@@ -34,3 +34,7 @@ setInterval(() => {
     quoteShow();
     getRandomColor();
 }, 2000);
+// git branch           # shows local branches
+// git branch -a        # shows remote branches too
+// git fetch origin     # update remote refs
+// git checkout -b navbar origin/navbar  # only if remote branch exists and you want to track it
