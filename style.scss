@@ -1,0 +1,36 @@
+@mixin centerDiv(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: row;
+}
+// }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; // Good to include this
+}
+
+body {
+    @include centerDiv;
+    height: 100vh;
+    // background: linear-gradient(rgb(16, 139, 69),rgb(226, 56, 85));
+}
+
+.container {
+    height: 300px;
+    width: 500px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 1rem;
+         @include centerDiv();
+
+    .inputBox{
+        height: 60%;
+        width: 80%;
+        // background-color: blueviolet;
+        color: rgb(2, 2, 2);
+        border-radius: 1.5rem;
+        @include centerDiv();
+    }
+}
